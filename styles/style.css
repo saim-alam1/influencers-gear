@@ -3,6 +3,9 @@
 :root {
   --lightBgColor: aliceblue;
   --darkOne: #3A3A3A;
+  --whiteColor: #FFFFFF;
+  --btnBg: #E02C6D;
+  --btnHover: #b10d49;
 }
 
 * {
@@ -10,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
-  background: var(--lightBgColor);
+  /* background: var(--lightBgColor); */
 }
 
 /* Header Area */
@@ -20,7 +23,8 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .header ul {
@@ -43,4 +47,75 @@
   color: var(--darkOne);
   font-weight: 800;
   font-size: 1.5rem;
+}
+
+/* Main Area */
+.main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Banner Section */
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-texts {
+  width: 580px;
+}
+
+.banner-heading {
+  font-weight: 800;
+  font-size: 3.13rem;
+  color: var(--darkOne);
+  margin-bottom: 16px;
+}
+
+.banner-description {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--darkOne);
+  margin-bottom: 16px;
+}
+
+.banner-image {
+  position: relative;
+}
+
+.banner-image .circle {
+  width: 475px;
+  height: 475px;
+}
+
+.banner-image .camera-main {
+  width: 440px;
+  height: 414px;
+  position: absolute;
+  left: 0;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: var(--btnBg);
+  color: var(--whiteColor);
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 41px;
+  transition: 0.5s;
+}
+
+.btn-primary:hover {
+  background-color: var(--btnHover);
+}
+
+.btn-primary i {
+  padding-left: 10px;
+  color: var(--whiteColor);
 }
