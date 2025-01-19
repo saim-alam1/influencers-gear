@@ -64,12 +64,18 @@
 /* Banner Section */
 .banner {
   margin-bottom: 100px;
+  background-image: url(../images/Circle\ design.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+
 }
 
 .banner-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
+  min-height: 80vh;
 }
 
 .banner-texts {
@@ -88,22 +94,6 @@
   font-size: 1rem;
   color: var(--darkOne);
   margin-bottom: 16px;
-}
-
-.banner-image {
-  position: relative;
-}
-
-.banner-image .circle {
-  width: 475px;
-  height: 475px;
-}
-
-.banner-image .camera-main {
-  width: 440px;
-  height: 414px;
-  position: absolute;
-  left: 0;
 }
 
 .btn-box {
@@ -150,7 +140,6 @@
 /* Card Items */
 .card-collection {
   width: 1047px;
-  background: blue;
   margin: 0 auto;
   margin-bottom: 170px;
 }
@@ -163,7 +152,7 @@
 }
 
 .card {
-  width: 330px;
+  width: 100%;
   height: 475px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
   padding: 15px 17px;
@@ -193,7 +182,6 @@
 .rating {
   display: flex;
   align-items: center;
-  /* justify-content: start; */
 }
 
 .rating i {
@@ -220,4 +208,5 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
