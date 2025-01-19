@@ -60,6 +60,7 @@
 .main {
   max-width: 1600px;
   margin: 0 auto;
+  background: bisque;
 }
 
 /* Banner Section */
@@ -294,4 +295,88 @@
   display: flex;
   gap: 10px;
   cursor: pointer;
+}
+
+/* Resoponsive Design */
+@media screen and (max-width: 576px) {
+  .header {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header>nav {
+    display: none;
+  }
+
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+
+  .banner {
+    position: relative;
+  }
+
+  .banner-image {
+    position: relative;
+    top: 500px;
+  }
+
+  .camera-main {
+    position: absolute;
+  }
+
+  .banner-texts,
+  .banner-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .sponsorers {
+    width: 100%;
+  }
+
+  .sponsors-logo {
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .card-collection {
+    width: 100%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .featured {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    padding: 0 10px;
+  }
+
+  .featured>img {
+    width: 100%;
+  }
+
+  .featured-texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .featured-description {
+    padding-bottom: 25px;
+  }
+
+  .btn-box {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
 }
