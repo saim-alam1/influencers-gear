@@ -10,6 +10,7 @@
   --btnHover: #b10d49;
   --lightGray: #ececec;
   --goldColor: #FB8200;
+  --navyBlue: #0A0826;
   --poppinsFont: "Poppins", serif;
   --interFont: "Inter", serif;
   --manropeFont: "Manrope", serif;
@@ -209,4 +210,49 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+}
+
+.special-btn {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.button-sp {
+  color: rgba(224, 44, 109, 0.87);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.button-sp i {
+  padding-left: 5px;
+}
+
+/* Featured Area */
+.featured {
+  width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-texts {
+  width: 610px;
+}
+
+.featured-title {
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: var(--navyBlue);
+  padding-bottom: 16px;
+}
+
+.featured-description {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--darkThree);
+  padding-bottom: 16px;
 }
