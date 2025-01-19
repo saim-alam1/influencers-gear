@@ -6,6 +6,7 @@
   --whiteColor: #FFFFFF;
   --btnBg: #E02C6D;
   --btnHover: #b10d49;
+  --lightGray: #ececec;
 }
 
 * {
@@ -13,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
-  /* background: var(--lightBgColor); */
 }
 
 /* Header Area */
@@ -56,6 +56,10 @@
 }
 
 /* Banner Section */
+.banner {
+  margin-bottom: 100px;
+}
+
 .banner-content {
   display: flex;
   align-items: center;
@@ -118,4 +122,21 @@
 .btn-primary i {
   padding-left: 10px;
   color: var(--whiteColor);
+}
+
+/* Sponsorers Section */
+.sponsorers {
+  width: 1110px;
+  /* height: 110px; */
+  margin: 0 auto;
+  margin-bottom: 100px;
+  border-top: 1px solid var(--lightGray);
+  border-bottom: 1px solid var(--lightGray);
+}
+
+.sponsors-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px;
 }
