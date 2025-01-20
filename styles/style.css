@@ -60,24 +60,34 @@
 .main {
   max-width: 1600px;
   margin: 0 auto;
-  background: bisque;
+  /* background: bisque; */
 }
 
 /* Banner Section */
 .banner {
   margin-bottom: 70px;
-  background-image: url(../images/Circle\ design.svg);
-  background-position: right;
-  background-repeat: no-repeat;
 
+
+}
+
+.banner-image {
+  background-image: url(../images/Circle\ design.svg);
+  /* background-position: right; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.banner-image img {
+  width: 100%;
 }
 
 .banner-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
-  min-height: 80vh;
+  /* height: 100%; */
+  /* min-height: 80vh; */
 }
 
 .banner-texts {
@@ -297,7 +307,7 @@
   cursor: pointer;
 }
 
-/* Resoponsive Design */
+/* For Mobile Devices */
 @media screen and (max-width: 576px) {
   .header {
     text-align: center;
@@ -313,16 +323,7 @@
   }
 
   .banner {
-    position: relative;
-  }
-
-  .banner-image {
-    position: relative;
-    top: 500px;
-  }
-
-  .camera-main {
-    position: absolute;
+    /* position: relative; */
   }
 
   .banner-texts,
@@ -347,12 +348,17 @@
 
   .card-collection {
     width: 100%;
+    margin-bottom: 100px;
   }
 
   .card-container {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
+  }
+
+  .special-btn {
+    padding-right: 10px;
   }
 
   .featured {
@@ -378,5 +384,56 @@
   .btn-box {
     justify-content: center;
     margin-bottom: 25px;
+  }
+}
+
+/* For Tab Devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header>nav {
+    padding-top: 10px;
+  }
+
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+
+  .banner-texts {
+    text-align: center;
+  }
+
+  .btn-box {
+    justify-content: center;
+  }
+
+  .sponsorers {
+    width: 100%;
+  }
+
+  .card-collection {
+    width: 100%;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px
+  }
+
+  .special-btn {
+    padding-right: 10px;
+  }
+
+  .featured {
+    width: 100%;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .featured-texts>.btn-box {
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
